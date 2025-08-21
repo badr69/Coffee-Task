@@ -1,10 +1,11 @@
-// On récupère le container (même ID que dans le HTML)
+// On récupère le container
 const coffeeContainer = document.getElementById('coffee-container');
 
-// Fetch pour récupérer les données du fichier JSON
-fetch('data.json')
-  .then(response => response.json())
-  .then(coffees => {
+// Fonction asynchrone pour récupérer les données
+async function loadCoffees() {
+  try {
+    const response = await fetch('data.json');
+    const coffees = await response.json();
     console.log("Données JSON :", coffees); // Debug
 
     coffees.forEach(coffee => {
@@ -22,5 +23,13 @@ fetch('data.json')
       `;
       coffeeContainer.insertAdjacentHTML("beforeend", card);
     });
-  })
-  .catch(error => console.error('Erreur fetch:', error));
+
+  } catch (error) {
+    console.error('Erreur fetch:', error);
+    coffeeContainer.innerHTML = "<p>Impossible de charger les cafés.</p>";
+  }
+}
+
+// Appel de la fonction
+loadCoffees();
+
