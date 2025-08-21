@@ -1,0 +1,29 @@
+[
+  {
+    "name": "Arabica",
+    "description": "100% Arabica",
+    "price": "10€/kg"
+  },
+  {
+    "name": "Robusta",
+    "description": "100% Robusta",
+    "price": "8€/kg"
+  },
+  {
+    "name": "Blend 50/50",
+    "description": "50% Arabica / 50% Robusta",
+    "price": "9€/kg"
+  },
+  {
+    "name" : "blend 25/75",
+    "description" : "25% Arabica / 75% Robusta",
+    "price" :  "10€/kg"
+  },
+
+   {
+    "name" : "blend 45/55",
+    "description" : "25% Arabica / 75% Robusta",
+    "price" :  "10€/kg"
+  }
+]
+

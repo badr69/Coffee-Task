@@ -1,0 +1,135 @@
+/* ======BodyStyles======*/
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+ background-color: #4b3621; /* brun café */
+  color: #fff; /* texte clair par défaut */
+}
+
+h1, h2 {
+  font-weight: 700;
+}
+
+/* =======NAVBAR========== */
+
+.navbar {
+  padding: 0.5rem 1.5rem;
+  background-color: #3e2c1c; /* marron très foncé */
+}
+
+.navbar-brand {
+  font-size: 2rem;
+  font-weight: bold;
+} 
+
+.nav-link {
+  font-size: 1.1rem;
+  margin-left: 0.5rem;
+  font-weight: 400; /* pour éviter trop de gras */
+}
+
+/* ========Title Section========*/
+   
+#title {
+  background: url('images/coffee-bg.jpg') no-repeat center center/cover;
+  color: #fff;
+  padding: 6rem 2rem;
+  text-align: left;
+}
+
+#title h1 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.title-image {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+/* ======Boutons==== */
+.download-button {
+  margin: 0.5rem 0.5rem 0.5rem 0;
+  font-size: 1rem;
+}
+
+/* ======Section Pricing=======*/
+   
+#pricing, #cta {
+  padding: 8rem 2rem;
+}
+
+#cta {
+  background-color: #3f2209;
+  text-align: center;
+}
+
+/* ========FOOTER=========*/
+  
+#footer {
+  background-color: #3e2c1c;
+  color: #fff;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.social-icon {
+  color: #f4c27a;
+  font-size: 1.5rem;
+  transition: transform 0.3s;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
+}
+
+
+/* =======Responsive Media Queries=======8/
+
+/* Desktop medium */
+@media (max-width: 1200px) {
+  .container-fluid {
+    padding: 3% 10%;
+  }
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+  #title {
+    text-align: center;
+  }
+  .title-image {
+    margin: 20px auto;
+    display: block;
+    transform: none;
+  }
+  h1 {
+    font-size: 2.5rem;
+  }
+  h2 {
+    font-size: 1.8rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 1rem;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  .download-button {
+    margin: 5% 0;
+    width: 100%;
+  }
+  .navbar-nav {
+    text-align: center;
+  }
+}
