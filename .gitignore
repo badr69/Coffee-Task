@@ -1,0 +1,13 @@
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# IDE / éditeurs
+.vscode/
+.idea/
+
+# Fichiers temporaires et logs
+*.log
+*.tmp
+*.bak
+*.swp
