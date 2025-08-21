@@ -1,0 +1,168 @@
+
+/* ===== Body et Fond ===== */
+body {
+  font-family: "Ubuntu", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #4b3621; /* brun café */
+  color: #fff; /* texte clair par défaut */
+}
+
+/* ===== Navbar ===== */
+.navbar {
+  padding: 0.5rem 1.5rem;
+  background-color: #3e2c1c; /* marron très foncé */
+}
+
+.navbar-brand {
+  font-size: 2rem;
+  font-weight: bold;
+} 
+
+.nav-link {
+  font-size: 1.1rem;
+  margin-left: 0.5rem;
+  font-weight: 400; /* pour éviter trop de gras */
+}
+
+/* ===== Section Title ===== */
+#title {
+  padding: 60px 0;
+}
+
+#title h1 {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #f4c27a;
+}
+
+#pricing h2 {
+  color: #fff; /* couleur jaune/or */
+  font-family: "Ubuntu", sans-serif;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+#pricing p {
+  color: #fff; /* texte clair pour le sous-titre */
+  font-size: 1.1rem;
+}
+
+/* ===== Boutons ===== */
+.btn-dark {
+  background-color: #3e2c1c;
+  border: none;
+}
+
+.btn-dark:hover {
+  background-color: #5a3f26;
+}
+
+.btn-outline-light {
+  color: #f4c27a;
+  border-color: #f4c27a;
+}
+
+.btn-outline-light:hover {
+  background-color: #f4c27a;
+  color: #4b3621;
+}
+
+/* ===== Pricing Cards ===== */
+.card {
+  background-color: #fff0e1; /* clair pour contraster */
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  color: #4b3621;
+  transition: transform 0.3s;
+}
+.card * {
+  color: #4b3621 !important;
+}
+.card button.btn {
+  color: #fff !important; /* texte blanc */
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-header h3 {
+  font-weight: 700;
+  color: #3e2c1c;
+}
+
+/* ===== CTA Section ===== */
+#cta {
+  background-color: #3e2c1c;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+#cta h3 {
+  color: #f4c27a;
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
+/* ===== Footer ===== */
+#footer {
+  background-color: #3e2c1c;
+  color: #fff;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.social-icon {
+  color: #f4c27a;
+  font-size: 1.5rem;
+  transition: transform 0.3s;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
+}
+
+/* Responsive Media Queries */
+@media (max-width: 1200px) {
+  .container-fluid {
+    padding: 3% 10%;
+  }
+}
+
+@media (max-width: 992px) {
+  #title {
+    text-align: center;
+  }
+  .title-image {
+    margin: 20px auto;
+    display: block;
+    transform: none;
+  }
+  h1 {
+    font-size: 2.5rem;
+  }
+  h2 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 1rem; /* réduit les marges latérales */
+  }
+
+  h1 {
+    font-size: 2rem; /* ajuste la taille du titre pour mobile */
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .download-button {
+    margin: 5% 0; /* bouton centré sur mobile */
+  }
+}
+
