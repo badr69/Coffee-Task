@@ -1,11 +1,10 @@
-/* ======BodyStyles======*/
-
+/* ====== BODY STYLES ====== */
 body {
   font-family: 'Ubuntu', sans-serif;
   margin: 0;
   padding: 0;
   line-height: 1.6;
- background-color: #4b3621; /* brun café */
+  background-color: #4b3621; /* brun café */
   color: #fff; /* texte clair par défaut */
 }
 
@@ -13,51 +12,59 @@ h1, h2 {
   font-weight: 700;
 }
 
-/* =======NAVBAR========== */
-
+/* ====== NAVBAR ====== */
 .navbar {
   padding: 0.5rem 1.5rem;
-  background-color: #3e2c1c; /* marron très foncé */
+  background-color: #3e2c1c; /* brun très foncé */
 }
 
 .navbar-brand {
   font-size: 2rem;
   font-weight: bold;
-} 
+}
 
 .nav-link {
   font-size: 1.1rem;
   margin-left: 0.5rem;
-  font-weight: 400; /* pour éviter trop de gras */
+  font-weight: 400; /* éviter trop de gras */
 }
 
-/* ========Title Section========*/
-   
-#title {
-  background: url('images/coffee-bg.jpg') no-repeat center center/cover;
-  color: #fff;
-  padding: 6rem 2rem;
-  text-align: left;
-}
-
+/* ====== TITLE SECTION ====== */
 #title h1 {
-  font-size: 3rem;
+  font-size: 4.5rem;
   margin-bottom: 2rem;
 }
 
 .title-image {
   max-width: 100%;
+  max-height: 400px; /* limite la hauteur */
+  height: auto;
   border-radius: 10px;
 }
 
-/* ======Boutons==== */
+/* ====== BOUTONS ====== */
 .download-button {
   margin: 0.5rem 0.5rem 0.5rem 0;
   font-size: 1rem;
+  transition: transform 0.3s, background-color 0.3s;
 }
 
-/* ======Section Pricing=======*/
-   
+.download-button:hover {
+  transform: scale(1.05);
+}
+
+.btn-brown {
+  background-color: #3e2c1c;
+  color: white;
+  border: none;
+  transition: background-color 0.3s;
+}
+
+.btn-brown:hover {
+  background-color: #4b3621;
+}
+
+/* ====== SECTION PRICING & CTA ====== */
 #pricing, #cta {
   padding: 8rem 2rem;
 }
@@ -67,8 +74,30 @@ h1, h2 {
   text-align: center;
 }
 
-/* ========FOOTER=========*/
-  
+/* ====== BOXES ====== */
+.box {
+  max-width: 400px;
+  margin: 50px auto;
+  background-color: #3e2c1c; /* brun foncé */
+  border-radius: 5px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4),
+              0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.box.items-box {
+  max-height: 500px;
+  overflow-y: auto; 
+  padding: 15px;
+  box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* ====== FORMULAIRE DE CONTACT ====== */
+.contact-form {
+  background-color: #4b3621;
+  border-radius: 8px;
+}
+
+/* ====== FOOTER ====== */
 #footer {
   background-color: #3e2c1c;
   color: #fff;
@@ -79,16 +108,22 @@ h1, h2 {
 .social-icon {
   color: #f4c27a;
   font-size: 1.5rem;
-  transition: transform 0.3s;
+  margin: 0 10px;
+  transition: transform 0.3s, color 0.3s;
 }
 
 .social-icon:hover {
   transform: scale(1.2);
+  color: #fff;
 }
 
+/* ====== ACCESSIBILITÉ ====== */
+a:focus, button:focus {
+  outline: 2px solid #f4c27a;
+  outline-offset: 2px;
+}
 
-/* =======Responsive Media Queries=======8/
-
+/* ====== RESPONSIVE ====== */
 /* Desktop medium */
 @media (max-width: 1200px) {
   .container-fluid {
@@ -104,7 +139,6 @@ h1, h2 {
   .title-image {
     margin: 20px auto;
     display: block;
-    transform: none;
   }
   h1 {
     font-size: 2.5rem;

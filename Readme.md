@@ -7,12 +7,12 @@ Dans https://snapcraft.io/store ==> node.js Runtime vrsion 22.18.0 stable inclut
 installer avec la commande sudo snap install node --classic
 version node: 22.18.0 stable
 version npm: 10.9.3
-3. Vscode version 1.103.1 stabl, installer avec la commande "sudo snap install code --classic"
+3. Vscode version 1.103.1 stable, installer avec la commande "sudo snap install code --classic.
 
 
 
 # Coffee-Task
-Nom du projet
+Coffe-Task
 
 ## Description
 Coffee-Task est un site front-end pour présenter des produits autour du café.  
